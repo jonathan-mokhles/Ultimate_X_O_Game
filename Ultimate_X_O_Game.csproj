@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BForm.Designer.cs">
+      <DependentUpon>BForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -59,6 +65,9 @@
     <Compile Include="X_O_3x3.Designer.cs">
       <DependentUpon>X_O_3x3.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BForm.resx">
+      <DependentUpon>BForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
