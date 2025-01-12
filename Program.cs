@@ -16,7 +16,7 @@ namespace Ultimate_X_O_Game
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new X_O_3x3());
+            Application.Run(new MainForm());
         }
     }
 }

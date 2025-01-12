@@ -1,6 +1,6 @@
 ﻿namespace Ultimate_X_O_Game
 {
-    partial class BForm
+    partial class BaseForm
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@
             // 
             this.winLabel.AutoSize = true;
             this.winLabel.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winLabel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.winLabel.ForeColor = System.Drawing.Color.DodgerBlue;
             this.winLabel.Location = new System.Drawing.Point(57, 219);
             this.winLabel.Name = "winLabel";
             this.winLabel.Size = new System.Drawing.Size(138, 29);
@@ -84,8 +84,8 @@
             // 
             this.PlayerLabel.AutoSize = true;
             this.PlayerLabel.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayerLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.PlayerLabel.Location = new System.Drawing.Point(65, 114);
+            this.PlayerLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.PlayerLabel.Location = new System.Drawing.Point(68, 114);
             this.PlayerLabel.Name = "PlayerLabel";
             this.PlayerLabel.Size = new System.Drawing.Size(122, 29);
             this.PlayerLabel.TabIndex = 22;
@@ -113,7 +113,7 @@
             this.btnRestart.TabIndex = 25;
             this.btnRestart.Text = "Restart";
             this.btnRestart.UseVisualStyleBackColor = false;
-            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            this.btnRestart.Click += new System.EventHandler(this.BtnRestart_Click);
             // 
             // btnBack
             // 
@@ -126,8 +126,9 @@
             this.btnBack.TabIndex = 26;
             this.btnBack.Text = "Back ";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // BForm
+            // BaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,8 +142,8 @@
             this.Controls.Add(this.TurnLabel);
             this.Controls.Add(this.Titlelabel);
             this.Controls.Add(this.label1);
-            this.Name = "BForm";
-            this.Text = "BForm";
+            this.Name = "BaseForm";
+            this.Text = "PBoardForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -46,11 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BForm.cs">
+    <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BForm.Designer.cs">
-      <DependentUpon>BForm.cs</DependentUpon>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Board_3x3.cs" />
+    <Compile Include="Form3x3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3x3.Designer.cs">
+      <DependentUpon>Form3x3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameManager.cs" />
+    <Compile Include="IBoard.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,19 +74,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="X_O_3x3.cs">
+    <Compile Include="pyramidBoard.cs" />
+    <Compile Include="PyramidForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="X_O_3x3.Designer.cs">
-      <DependentUpon>X_O_3x3.cs</DependentUpon>
+    <Compile Include="PyramidForm.Designer.cs">
+      <DependentUpon>PyramidForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BForm.resx">
-      <DependentUpon>BForm.cs</DependentUpon>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3x3.resx">
+      <DependentUpon>Form3x3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PyramidForm.resx">
+      <DependentUpon>PyramidForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
